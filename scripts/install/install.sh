@@ -249,7 +249,7 @@ if [ "${install_script}" == "" ];then
         INSTALL_SCRIPT_URL=$FALLBACK_INSTALL_SCRIPT_URL
         curl -# -f $INSTALL_SCRIPT_URL > $install_script
         if [ $? -ne 0 ]; then
-          echo "Could not download Oracle Cloud Infrastructure CLI install script from $INSTALL_SCRIPT_URL. Please read common errors https://github.com/oracle/oci-cli/blob/master/COMMON-ISSUES.rst." && exit
+          echo "Could not download Oracle Cloud Infrastructure CLI install script from $INSTALL_SCRIPT_URL. Please read common errors https://github.com/oracle/oci-cli/COMMON-ISSUES.rst." && exit
         fi
         echo "Falling back to previous install.py script URL - $INSTALL_SCRIPT_URL"
     fi
